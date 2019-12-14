@@ -33,4 +33,4 @@ function getRandomInt() {
 }
 
 // console.log(verificaPlaca('AASD1C22'));
-app.listen(80);
+app.listen(443);
