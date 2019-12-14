@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+const PORT = process.env.PORT || 5000;
 
 const placaOld = new RegExp("[a-zA-Z]{3}[0-9]{4}");
 const placaMercosul = new RegExp("[a-zA-Z]{3}[0-9]{1}[a-zA-Z]{1}[0-9]{2}");
@@ -33,4 +34,4 @@ function getRandomInt() {
 }
 
 // console.log(verificaPlaca('AASD1C22'));
-app.listen(443);
+app.listen(PORT, () => console.log(`Listening on ${ PORT }`));
